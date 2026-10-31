@@ -20,8 +20,3 @@ wardens = db.get_hostel_wardens()
 for hostel in scope:
     emails = [e for _n, e in db.get_warden_emails(hostel)]
     st.write(f"**{hostel}**: " + (", ".join(emails) if emails else "No active warden assigned (complaints are flagged as unassigned)"))
-
-st.subheader("Test")
-if st.button("Send a test email to me"):
-    ok, msg = notify.send_test(user["username"])
-    (st.success if ok else st.error)(msg)
