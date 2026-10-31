@@ -39,11 +39,7 @@ with right:
                     else:
                         st.session_state.user = user
                         st.rerun()
-            if config.SEED_DEMO_DATA:
-                with st.expander("Demo accounts"):
-                    st.write(f"Student: `{config.DEMO_STUDENT_EMAIL}` / `student123`")
-                    st.write(f"Warden: `{config.DEMO_WARDEN_EMAIL}` / `warden123`")
-
+            
         with tab_student:
             with st.form("student_signup", clear_on_submit=True):
                 name = st.text_input("Full name")

@@ -52,9 +52,7 @@ def seed():
 
     students = []
     for i, (name, roll, room) in enumerate(STUDENTS):
-        email = f"{roll}@{config.COLLEGE_DOMAIN}"
-        if i == 0:
-            email = config.DEMO_STUDENT_EMAIL
+        email = f"demo{i + 1:02d}@{config.COLLEGE_DOMAIN}"
         hostel = hostels[i % len(hostels)]
         uid = db.create_user(name, email, auth.hash_password("student123"), "student", hostel)
         if uid is None:  # account already exists (kept from an older version)

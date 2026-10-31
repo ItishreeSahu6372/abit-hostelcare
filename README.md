@@ -7,10 +7,6 @@ Roles: Student, Warden, Admin.
     pip install -r requirements.txt
     python -m streamlit run app.py
 
-## Demo accounts
-- Student: 23cse001@abit.edu.in / student123
-- Warden:  warden@abit.edu.in / warden123
-- Admin:   admin@abit.edu.in / admin123   (change with ADMIN_PASSWORD in secrets)
 
 ## Set before the final demo
 1. config.py: replace HOSTELS with the real ABIT hostel names; set SEED_DEMO_DATA = False for real use.
