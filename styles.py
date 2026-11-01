@@ -15,7 +15,7 @@ CSS = """
 }
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
-.block-container {padding-top: 2.2rem; max-width: 1180px;}
+.block-container {padding-top: 4.5rem; max-width: 1180px;}
 h2, h3 {font-weight: 700; letter-spacing: -0.01em; color: #0F172A;}
 
 /* Page header */
